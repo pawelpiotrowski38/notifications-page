@@ -39,7 +39,7 @@ export default function Notification({ notification, setNotifications }) {
                         <strong className='notification__post-name'>{notification.postName}</strong>
                     )}
                     {notification.groupName && (
-                        <strong className='notification__group-name'>{notification.groupName}</strong>
+                        <strong className='notification__post-name'>{notification.groupName}</strong>
                     )}
                     {!notification.read && (
                         <span className='notification__unread'></span>

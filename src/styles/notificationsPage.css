@@ -10,7 +10,7 @@
         max-width: 730px;
         padding: 2.125rem 1.9375rem;
         padding-bottom: 0.125rem;
-        border-radius: 0.875rem;
+        border-radius: 1rem;
         box-shadow: 0px 2px 50px var(--shadow);
     }
 }

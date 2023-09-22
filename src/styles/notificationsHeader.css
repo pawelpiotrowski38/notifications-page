@@ -12,6 +12,7 @@
 }
 
 .notifications-header__title {
+    /* margin-bottom: 0.0625rem; */
     margin-right: 0.5625rem;
     color: var(--very-dark-blue);
     font-size: 1.25rem;
@@ -19,7 +20,7 @@
 }
 
 .notifications-header__number {
-    padding: 0.125rem 0.75rem 0.25rem 0.6875rem;
+    padding: 0.125rem 0.75rem 0.1875rem 0.6875rem;
     border-radius: 0.375rem;
     background-color: var(--blue);
     color: var(--white);
@@ -34,6 +35,12 @@
     font-size: 0.9375rem;
     letter-spacing: 0.5px;
     word-spacing: -2.5px;
+    transition: all 0.25s ease-in-out;
+}
+
+.notifications-header__button:hover {
+    color: var(--blue);
+    cursor: pointer;
 }
 
 @media screen and (min-width: 45.625em) {
@@ -44,6 +51,10 @@
     .notifications-header__title {
         margin-right: 0.75rem;
         font-size: 1.5rem;
+    }
+
+    .notifications-header__number {
+        padding: 0.125rem 0.75rem 0.25rem 0.6875rem;
     }
 
     .notifications-header__button {
