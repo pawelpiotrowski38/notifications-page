@@ -1,6 +1,8 @@
 import '../styles/notificationsHeader.css';
 
-export default function NotificationsHeader() {
+export default function NotificationsHeader({ notificationsUnread, setNotification }) {
+
+
     return (
         <div className="notifications-header">
             <div className="notifications-header__info-conatiner">
@@ -8,7 +10,7 @@ export default function NotificationsHeader() {
                     Notifications
                 </h1>
                 <div className="notifications-header__number">
-                    3
+                    {notificationsUnread}
                 </div>
             </div>
             <button className="notifications-header__button">

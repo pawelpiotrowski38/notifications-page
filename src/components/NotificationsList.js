@@ -1,12 +1,12 @@
 import Notification from "./Notification";
 import '../styles/notificationsList.css';
 
-export default function NotificationsList() {
+export default function NotificationsList({ notifications }) {
     return (
         <ul className="notifications-list">
-            <Notification />
-            <Notification />
-            <Notification />
+            {notifications.map((notification) => (
+                <Notification key={notification.id} notification={notification} />
+            ))}
         </ul>
     )
 }
