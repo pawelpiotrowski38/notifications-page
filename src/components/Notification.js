@@ -35,8 +35,11 @@ export default function Notification({ notification, setNotifications }) {
                     {notificationType === 'follow' && (
                         'followed you'
                     )}
-                    {notification.extName && (
-                        <strong className='notification__post-name'>{notification.extName}</strong>
+                    {notification.postName && (
+                        <strong className='notification__post-name'>{notification.postName}</strong>
+                    )}
+                    {notification.groupName && (
+                        <strong className='notification__group-name'>{notification.groupName}</strong>
                     )}
                     {!notification.read && (
                         <span className='notification__unread'></span>

@@ -29,8 +29,12 @@
     width: 39px;
 }
 
+.notification__info-container {
+    flex: 1;
+}
+
 .notification__content {
-    margin-top: 0.0625rem;
+    /* margin-top: 0.0625rem; */
     margin-bottom: 0.25rem;
     color: var(--dark-grayish-blue);
     font-size: 0.9375rem;
@@ -77,4 +81,47 @@
     color: var(--dark-grayish-blue);
     font-size: 0.9375rem;
     letter-spacing: -0.5px;
+}
+
+@media screen and (min-width: 45.625em) {
+    .notification {
+        padding: 1.125rem 1.125rem 1rem 1.125rem;
+        /* padding-right: 0.75rem; */
+    }
+
+    .notification__avatar-container {
+        margin-right: 1.1875rem;
+    }
+
+    .notification__image {
+        width: 45px;
+    }
+
+    .notification__content {
+        margin-bottom: 0.1875rem;
+        font-size: 1rem;
+        line-height: 1.4;
+        letter-spacing: 0.1px;
+    }
+
+    .notification__time {
+        font-size: 1rem;
+    }
+
+    .notification__message {
+        margin-bottom: 0.125rem;
+        padding: 1rem 1.25rem;
+        font-size: 1rem;
+        line-height: 1.35;
+        letter-spacing: 0;
+    }
+
+    .notification__picture-container {
+        margin-bottom: 0.125rem;
+    }
+
+    .notification__unread {
+        position: relative;
+        top: -1px;
+    }
 }

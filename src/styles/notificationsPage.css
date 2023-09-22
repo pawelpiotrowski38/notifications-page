@@ -4,3 +4,13 @@
     background-color: var(--white);
     font-size: 0.9375rem;
 }
+
+@media screen and (min-width: 45.625em) {
+    .notifications-page {
+        max-width: 730px;
+        padding: 2.125rem 1.9375rem;
+        padding-bottom: 0.125rem;
+        border-radius: 0.875rem;
+        box-shadow: 0px 2px 50px var(--shadow);
+    }
+}

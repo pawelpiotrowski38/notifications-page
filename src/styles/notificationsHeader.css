@@ -35,3 +35,18 @@
     letter-spacing: 0.5px;
     word-spacing: -2.5px;
 }
+
+@media screen and (min-width: 45.625em) {
+    .notifications-header {
+        margin-bottom: 1.875rem;
+    }
+
+    .notifications-header__title {
+        margin-right: 0.75rem;
+        font-size: 1.5rem;
+    }
+
+    .notifications-header__button {
+        font-size: 1rem;
+    }
+}
