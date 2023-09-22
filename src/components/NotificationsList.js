@@ -1,4 +1,5 @@
 import Notification from "./Notification";
+import '../styles/notificationsList.css';
 
 export default function NotificationsList() {
     return (

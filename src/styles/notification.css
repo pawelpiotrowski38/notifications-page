@@ -1,0 +1,48 @@
+.notification {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 1rem;
+    background-color: var(--very-light-grayish-blue);
+    border-radius: 0.5rem;
+}
+
+.notification__avatar-container {
+    margin-right: 0.75rem;
+}
+
+.notification__avatar {
+    width: 39px;
+}
+
+.notification__content {
+    margin-bottom: 0.25rem;
+    color: var(--dark-grayish-blue);
+    font-size: 0.9375rem;
+    letter-spacing: -0.5px;
+}
+
+.notification__username {
+    margin-right: 0.375rem;
+    color: var(--very-dark-blue);
+    font-weight: 800;
+}
+
+.notification__post-name {
+    margin-left: 0.375rem;
+    font-weight: 800;
+}
+
+.notification__unread {
+    display: inline-block;
+    width: 0.5rem;
+    height: 0.5rem;
+    margin-left: 0.375rem;
+    border-radius: 50%;
+    background-color: var(--red);
+}
+
+.notification__time {
+    color: var(--grayish-blue);
+    font-size: 0.875rem;
+}
