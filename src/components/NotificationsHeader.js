@@ -16,9 +16,11 @@ export default function NotificationsHeader({ notificationsUnread, setNotificati
                 <h1 className="notifications-header__title">
                     Notifications
                 </h1>
-                <div className="notifications-header__number">
-                    {notificationsUnread}
-                </div>
+                {notificationsUnread > 0 && (
+                    <div className="notifications-header__number">
+                        {notificationsUnread}
+                    </div>
+                )}
             </div>
             <button onClick={handleReadAll} className="notifications-header__button">
                 Mark all as read
