@@ -1,7 +1,14 @@
 import '../styles/notificationsHeader.css';
 
-export default function NotificationsHeader({ notificationsUnread, setNotification }) {
+export default function NotificationsHeader({ notificationsUnread, setNotifications }) {
 
+    const handleReadAll = function() {
+        setNotifications((prevNotifications) => (
+            prevNotifications.map((notification) => (
+                {...notification, read: true}
+            ))
+        ))
+    }
 
     return (
         <div className="notifications-header">
@@ -13,7 +20,7 @@ export default function NotificationsHeader({ notificationsUnread, setNotificati
                     {notificationsUnread}
                 </div>
             </div>
-            <button className="notifications-header__button">
+            <button onClick={handleReadAll} className="notifications-header__button">
                 Mark all as read
             </button>
         </div>

@@ -1,11 +1,19 @@
 import '../styles/notification.css';
 
-export default function Notification({ notification }) {
+export default function Notification({ notification, setNotifications }) {
     const isRead = notification.read;
     const notificationType = notification.type;
 
+    const handleRead = function(id) {
+        setNotifications((prevNotifications) => (
+            prevNotifications.map((notification) => (
+                notification.id === id ? {...notification, read: true} : notification
+            ))
+        ))
+    }
+
     return (
-        <li className={`notification ${isRead ? '' : 'notification--unread'}`}>
+        <li className={`notification ${isRead ? '' : 'notification--unread'}`} onClick={() => handleRead(notification.id)}>
             <div className='notification__avatar-container'>
                 <img className='notification__image' src={`/images/${notification.avatar}`} alt='avt' />
             </div>
